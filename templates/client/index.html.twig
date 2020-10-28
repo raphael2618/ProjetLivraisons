@@ -3,10 +3,10 @@
 {% block title %}Client index{% endblock %}
 
 {% block body %}
-    <h1>Client index</h1>
+    <h1>Repertoire de clients</h1>
 
     <table class="table">
-        <thead>
+        <thead class="thead-dark">
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
@@ -21,17 +21,17 @@
                 <td>{{ client.nom }}</td>
                 <td>{{ client.adresse }}</td>
                 <td>
-                    <a href="{{ path('client_show', {'id': client.id}) }}">show</a>
-                    <a href="{{ path('client_edit', {'id': client.id}) }}">edit</a>
+                    <a class="btn btn-primary" href="{{ path('client_show', {'id': client.id}) }}">voir</a>
+                    <a class="btn btn-primary" href="{{ path('client_edit', {'id': client.id}) }}">editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="4">aucun client</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('client_new') }}">Create new</a>
+    <a class="btn btn-secondary" href="{{ path('client_new') }}">Nouveau client</a>
 {% endblock %}

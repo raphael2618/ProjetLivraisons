@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Affichage d'un client{% endblock %}
+
+{% block body %}
+    <h1>Voici le client choisi</h1>
+
+    <table class="table">
+        <tr>
+            <th scope="row">Numero</th>
+            <td>{{ client.id }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Nom</th>
+            <td>{{ client.nom }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Adresse</th>
+            <td>{{ client.adresse }}</td>
+        </tr>
+    </table>
+
+    {% for commande in client.commandes %}
+
+        <h5>Commande numero {{ commande.id }}</h5>
+
+        <table class="table table-sm">
+            <tr>
+                <th scope="row">Prix</th>
+                <td>{{ commande.prix }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Contenu</th>
+                <td>{{ commande.contenu }}</td>
+            </tr>
+        </table>
+
+    {% endfor %}
+{% endblock %}

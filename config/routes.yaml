@@ -6,3 +6,9 @@
 app_lucky_number:
   path: /lucky/number
   controller: App\Controller\LuckyController::number
+show_client:
+  path: /show_client/{id}
+  controller: App\Controller\ClientController::showClient
+show_all_clients:
+  path: /show_all_clients
+  controller: App\Controller\ClientController::showAll

@@ -3,10 +3,10 @@
 {% block title %}Livraison index{% endblock %}
 
 {% block body %}
-    <h1>Livraison index</h1>
+    <h1>Repertoire des livraisons</h1>
 
     <table class="table">
-        <thead>
+        <thead class="thead-dark">
             <tr>
                 <th>Id</th>
                 <th>Prix</th>
@@ -21,17 +21,17 @@
                 <td>{{ livraison.prix }}</td>
                 <td>{{ livraison.contenu }}</td>
                 <td>
-                    <a href="{{ path('livraison_show', {'id': livraison.id}) }}">show</a>
-                    <a href="{{ path('livraison_edit', {'id': livraison.id}) }}">edit</a>
+                    <a class="btn btn-primary"  href="{{ path('livraison_show', {'id': livraison.id}) }}">voir</a>
+                    <a class="btn btn-primary"  href="{{ path('livraison_edit', {'id': livraison.id}) }}">editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="4">aucune livraison</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('livraison_new') }}">Create new</a>
+    <a class="btn btn-secondary" href="{{ path('livraison_new') }}">Nouvelle livraison</a>
 {% endblock %}
