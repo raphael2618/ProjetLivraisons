@@ -34,6 +34,11 @@ class Client
      */
     private $commandes;
 
+    /**
+     * @ORM\Column(type="date", nullable=true)
+     */
+    private $inscription;
+
     public function __construct()
     {
         $this->commandes = new ArrayCollection();
@@ -101,5 +106,17 @@ class Client
 
     public function __toString() {
         return $this->getNom();
+    }
+
+    public function getInscription(): ?\DateTimeInterface
+    {
+        return $this->inscription;
+    }
+
+    public function setInscription(?\DateTimeInterface $inscription): self
+    {
+        $this->inscription = $inscription;
+
+        return $this;
     }
 }

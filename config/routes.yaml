@@ -8,7 +8,7 @@ app_lucky_number:
   controller: App\Controller\LuckyController::number
 show_client:
   path: /show_client/{id}
-  controller: App\Controller\ClientController::showClient
+  controller: App\Controller\ClientViewController::showClient
 show_all_clients:
   path: /show_all_clients
-  controller: App\Controller\ClientController::showAll
+  controller: App\Controller\ClientViewController::showAll

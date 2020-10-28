@@ -26,5 +26,12 @@ Executer:
 
     http://localhost:8000/show_client/{id}
     http://localhost:8000/show_all_clients
+    
+    Ces vues utilisent leurs propres controleur `ClientViewController`,
+    ainsi que leurs routes ci-dessus
 
 3. Inclusion de Javascript
+
+    Dans les deux vues ci-dessus, les commandes apparaissent 
+en tant que modal de Bootstrap, utilisant JQuery (inclus dans le twig de base)
+
