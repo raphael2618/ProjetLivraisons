@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Affichage de tous les produits{% endblock %}
+
+{% block body %}
+    <h1>Voici tous les produits</h1>
+    <ul>
+
+        {% for produit in produits %}
+            <h3>Produit numero {{ produit.id }}</h3>
+            <table class="table">
+                <tr>
+                    <th scope="row">Nom</th>
+                    <td>{{ produit.nom }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">prix</th>
+                    <td>{{ produit.prix }}</td>
+                </tr>
+            </table>
+        {% endfor %}
+    </ul>
+
+    <a class="btn btn-primary" href="{{ path('new_produit') }}">Nouveau produit</a>
+{% endblock %}

@@ -2,13 +2,15 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
-# the "app_lucky_number" route name is not important yet
-app_lucky_number:
-  path: /lucky/number
-  controller: App\Controller\LuckyController::number
 show_client:
   path: /show_client/{id}
   controller: App\Controller\ClientViewController::showClient
 show_all_clients:
   path: /show_all_clients
   controller: App\Controller\ClientViewController::showAll
+new_produit:
+  path: /new_produit
+  controller: App\Controller\ProduitController::new
+show_all_produits:
+  path: /show_all_produits
+  controller: App\Controller\ProduitController::showAll

@@ -7,9 +7,14 @@ Projet pour classe de CSI 2020 utilisant Symfony.
 ## Instructions
 
 ### Comment installer
-Executer:
 
-    composer install
+* Executer:
+
+      composer install
+      
+* Editer `.env.local` selon `.env` avec l'URL de la base de donnees MySQL.
+
+* (Optionnel) Importer le fichier livraison.sql vers la base de donnees MySQL
 
 ### Comment demarrer
 
@@ -35,3 +40,12 @@ Executer:
     Dans les deux vues ci-dessus, les commandes apparaissent 
 en tant que modal de Bootstrap, utilisant JQuery (inclus dans le twig de base)
 
+4. Formulaire
+
+    Creation du type Produit, et d'un formulaire cree manuellement avec CSS a l'adresse
+    
+        http://localhost:8000/new_produit
+    
+    Qui redirige vers une vue a
+    
+        http://localhost:8000/show_all_produits
