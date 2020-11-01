@@ -38,8 +38,8 @@ CREATE TABLE `client` (
 --
 
 INSERT INTO `client` (`id`, `nom`, `adresse`, `inscription`) VALUES
-(1, 'Raphael', 'ici', '2020-10-28'),
-(2, 'Ben', 'la', NULL);
+(1, 'Raphael', '26 avenue mozart', '2020-10-28'),
+(2, 'Ben', '33 rue de rivolie', NULL);
 
 -- --------------------------------------------------------
 
@@ -83,8 +83,9 @@ CREATE TABLE `livraison` (
 INSERT INTO `livraison` (`id`, `prix`, `contenu`, `client_id`) VALUES
 (1, 50, 'ordis', 1),
 (2, 10, 'stylos', 1),
-(3, 100, 'livres', 2);
-
+(3, 6, 'livres', 2),
+(4, 2, 'ventilateurs', 2),
+(5, 5, 'horloges',2);
 -- --------------------------------------------------------
 
 --
@@ -105,7 +106,7 @@ INSERT INTO `produit` (`id`, `nom`, `prix`) VALUES
 (2, 'verre', 60),
 (3, 'montre', 20),
 (4, 'clavier', 5),
-(5, 'montre2', 30);
+(5, 'souris', 30);
 
 --
 -- Index pour les tables exportées
