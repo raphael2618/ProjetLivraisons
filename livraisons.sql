@@ -83,9 +83,9 @@ CREATE TABLE `livraison` (
 INSERT INTO `livraison` (`id`, `prix`, `contenu`, `client_id`) VALUES
 (1, 50, 'ordis', 1),
 (2, 10, 'stylos', 1),
-(3, 6, 'livres', 2),
-(4, 2, 'ventilateurs', 2),
-(5, 5, 'horloges',2);
+(3, 15, 'livres', 2),
+(4, 60, 'ventilateurs', 2),
+(5, 50, 'horloges',2);
 -- --------------------------------------------------------
 
 --
@@ -105,7 +105,7 @@ CREATE TABLE `produit` (
 INSERT INTO `produit` (`id`, `nom`, `prix`) VALUES
 (2, 'verre', 60),
 (3, 'montre', 20),
-(4, 'clavier', 5),
+(4, 'clavier', 70),
 (5, 'souris', 30);
 
 --
