@@ -12,9 +12,11 @@ Projet pour classe de CSI 2020 utilisant Symfony.
 
       composer install
       
-* Editer `.env.local` selon `.env` avec l'URL de la base de donnees MySQL.
+* Copier `.env` vers `.env.local` et changer l'URL de la base de donnees MySQL comme suis :
 
-* (Optionnel) Importer le fichier livraison.sql vers la base de donnees MySQL
+      DATABASE_URL=mysql://root:root@127.0.0.1:3306/livraisons?serverVersion=5.7
+
+* (Optionnel) Importer le fichier `livraisons.sql` vers la base de donnees MySQL
 
 ### Comment demarrer
 
