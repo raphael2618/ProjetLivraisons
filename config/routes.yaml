@@ -1,7 +1,6 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
-
+index:
+  path: /
+  controller: App\Controller\IndexController::index
 show_client:
   path: /show_client/{id}
   controller: App\Controller\ClientViewController::showClient

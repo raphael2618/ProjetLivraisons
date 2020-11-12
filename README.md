@@ -19,6 +19,8 @@ Projet pour classe de CSI 2020 utilisant Symfony.
 ### Comment demarrer
 
     symfony server:start
+
+Et ouvrir la page d'accueil avec les liens de fonctionnalités (voir ci-après) sur http://localhost:8000/
     
 ## Fonctionnalites
 
@@ -27,7 +29,7 @@ Projet pour classe de CSI 2020 utilisant Symfony.
     http://localhost:8000/client
     http://localhost:8000/livraison
     
-2. Deux vues heritant du twmplate twig "base", egalement stylisees avec Bootstrap
+2. Deux vues heritant du template twig "base", egalement stylisees avec Bootstrap
 
     http://localhost:8000/show_client/{id}
     http://localhost:8000/show_all_clients
